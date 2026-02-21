@@ -80,7 +80,7 @@ Decoded message: `I love your curiosity`
 **Demonstrates:** attackers sending C2 commands via DNS TXT records.
 
  **Answer:**  
-**Technique:** DNS Tunneling
+**Technique:** **DNS Tunneling**
 
 ### Why Do We Analyze Network Traffic?
 Network Traffic Analysis helps to:
@@ -114,7 +114,7 @@ Content-Disposition: attachment; filename="suspicious_package.zip"
 
 
 **Question:** What is the size of the ZIP attachment?  
- 10485760 bytes  
+ **10485760 bytes**  
 
 Logs show:
 - File name  
@@ -151,7 +151,7 @@ Seq=34567232
 Large jump in sequence number → suspicious  
 
 **Question:** Which field in TCP header helps detect session hijacking?  
- Sequence number
+ **Sequence number**
 
 ---
 
@@ -163,7 +163,7 @@ Fragmentation example:
   - Cause reassembly confusion  
 
 **Question:** Which attack do attackers use to evade IDS?  
- Fragmentation attack
+ **Fragmentation attack**
 
 ---
 
@@ -190,14 +190,14 @@ Used for **Man-in-the-Middle (MITM)**
 - IDS/IPS  
 Generate **less traffic**  
 
-** Endpoint Devices**  
+**Endpoint Devices**  
 - Workstations  
 - Servers  
 - IoT & Mobile devices  
 Generate **most traffic**  
 
 **Question:** Which category generates most traffic?  
- Endpoint
+ **Endpoint**
 
 ---
 
@@ -212,10 +212,10 @@ Important for detecting: Lateral movement, internal compromise
 
 **SMB Flow Question:**  
 Before SMB session establishment, which service is contacted first?  
- Kerberos  
+ **Kerberos**  
 
 **TLS Question:** What does TLS stand for?  
- Transport Layer Security  
+ **Transport Layer Security**  
 
 ---
 
@@ -260,13 +260,11 @@ Traffic can be observed using:
 
 ### Scenario 1 – Malicious PowerShell Download
 Captured HTTP response:
-![Uploading Screenshot 2026-02-21 215546.png…]()
+<img width="1358" height="632" alt="Screenshot 2026-02-21 215546" src="https://github.com/user-attachments/assets/2a19bfb3-463c-48ec-827b-7e129edf0774" />
 
-![Uploading Screenshot 2026-02-21 215627.png…]()
-
-![Uploading Screenshot 2026-02-21 220011.png…]()
-
-<img width="545" height="49" alt="Screenshot 2026-02-21 215937" src="https://github.com/user-attachments/assets/fa2aa397-ac06-4d44-b10b-dd7772af1dbd" />
+<img width="1337" height="558" alt="Screenshot 2026-02-21 215627" src="https://github.com/user-attachments/assets/ace1b7b2-5d92-4b19-8f09-7bd2f348f136" />
+<img width="545" height="49" alt="Screenshot 2026-02-21 215937" src="https://github.com/user-attachments/assets/f8a3502c-74bb-489e-a0b5-500df5a64c77" />
+<img width="554" height="614" alt="Screenshot 2026-02-21 220011" src="https://github.com/user-attachments/assets/e52b97bc-f2f3-4141-8433-77559f87d284" />
 
 Content-Disposition: attachment; filename="install.ps1"
 Body Preview:
@@ -285,7 +283,8 @@ Captured DNS TXT record:
 
 <img width="545" height="73" alt="Screenshot 2026-02-21 220221" src="https://github.com/user-attachments/assets/d497e4f4-681b-47d3-b7dd-953575e538e2" />
 
-![Uploading Screenshot 2026-02-21 220241.png…]()
+<img width="531" height="441" alt="Screenshot 2026-02-21 220241" src="https://github.com/user-attachments/assets/32425a8a-5261-44f2-bf54-4dd263a9f561" />
+
 
 data: THM{C2CommandFound}
 
