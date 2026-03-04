@@ -50,16 +50,16 @@ Pkt #  Src IP            Domain Name                                        Type
 Total DNS packets processed: 580
 Queries found and printed: 292
 
-How It Works
-Opens the .pcap file with PyShark and filters only DNS queries (dns.flags.response == 0)
-Extracts source IP, domain name (dns.qry_name), and query type (dns.qry_type)
-Uses a set to avoid duplicate entries (same source IP + same domain)
-Detects DNS server IP from the destination of the first query
-Prints a neat table + summary stats at the end
+### How It Works
+-Opens the .pcap file with PyShark and filters only DNS queries (dns.flags.response == 0)
+-Extracts source IP, domain name (dns.qry_name), and query type (dns.qry_type)
+-Uses a set to avoid duplicate entries (same source IP + same domain)
+-Detects DNS server IP from the destination of the first query
+-Prints a neat table + summary stats at the end
 
-Quick DNS Reminder
-DNS Query → Your device asks: “What is the IP of google.com?”
-DNS Response → DNS server replies with the IP address (or error)
-Type 1 = A record (IPv4)
-Type 28 = AAAA record (IPv6)
+### Quick DNS Reminder
+-DNS Query → Your device asks: “What is the IP of google.com?”
+-DNS Response → DNS server replies with the IP address (or error)
+-Type 1 = A record (IPv4)
+-Type 28 = AAAA record (IPv6)
 
